@@ -1,0 +1,69 @@
+/*Estilo da página index.html*/
+
+
+.center{
+    text-align: center;   
+}
+
+.justify{
+    text-align: justify;
+}
+.container{
+    font-size: 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    width: 100;
+    height: 4vw;
+
+}
+
+.centerwd{
+    text-align: center;
+    width: 500px;
+    font-size: 18px;
+}
+
+.menu{
+    text-align: end;
+}
+
+.menu li {
+    display: inline;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li a:hover{
+    color: rgb(35, 90, 4);
+}
+
+.texto{
+    padding: 30px;
+}
+
+.imagem{
+    width: 320px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.formulario{
+    padding: 20px;
+}

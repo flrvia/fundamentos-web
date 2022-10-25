@@ -1,40 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Definindo a largura da tela, seja qual dispositivo for -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Definindo a largura da tela, seja qual dispositivo for -->
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <ul>
+    <ul class="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
         <li>
             <a href="contato.html">Contato</a>
         </li>
+        <li>
+            <a href="projetos.html">Projetos</a>
+        </li>
     </ul>
 
-   <h1>Sobre a Flávia Santana</h1>
+    <h1 class="flavia">Sobre a Flávia Santana</h1>
 
-   <p>Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Viva Forevis aptent taciti sociosqu ad litora torquent.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.Quem manda na minha terra sou euzis!</p>
-   <p>Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Si num tem leite então bota uma pinga aí cumpadi!Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.</p>
-   <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Viva Forevis aptent taciti sociosqu ad litora torquent.Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
+    <div class="container">
+        <div >
+            <img class="imagem" src="assets\img\R.gif" alt="Foto da criadora do conteúdo">
+        </div>
+        <div class="texto">
+            <p class="justify">
+                Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Viva Forevis aptent taciti sociosqu
+                ad litora torquent.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis
+                nisl.Quem manda na minha terra sou euzis!
+            </p>
+            <p class="justify">
+                Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Si num tem leite então bota uma pinga aí
+                cumpadi!Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.
+            </p>
+            <p class="justify">
+                Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis,
+                aguis e fermentis.Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Viva
+                Forevis aptent taciti sociosqu ad litora torquent.Todo mundo vê os porris que eu tomo, mas ninguém vê os
+                tombis que eu levo!
+            </p>
+        </div>
+        
+       
+    </div>
 
-    <img src="assets\img\R.gif" alt="Foto da criadora do conteúdo">
+    
     <hr>
-    <h2>Meu vídeo preferido</h2>
+    <h2 class="center">Meu vídeo preferido</h2>
+    <div class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dcOe5mlD-Aw" title="YouTube video player"
+            frameborder="50" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/flaviasantanab/" target="_blank">
+                <img class="icon" src="assets/img/linkedin.png" alt="icone do linkedin">
+            </a>
+            <a href="" target="_blank">
+                <img class="icon" src="assets/img/facebook.png" alt="icone do facebook">
+            </a>
+            <a href="https://twitter.com/flrvia" target="_blank">
+                <img class="icon" src="assets/img/twitter.png" alt="icone do twitter">
+            </a>
+            <a href="https://github.com/flrvia" target="_blank">
+                <img class="icon" src="assets/img/github.png" alt="icone do github">
+            </a>
+            <a href="https://bit.ly/3gGTrn6" target="_blank">
+                <img class="icon" src="assets/img/whatsapp.png" alt="icone do whatsapp">
+            </a>
+        </div>
 
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/dcOe5mlD-Aw" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
+        
+        <p class="center">
+        Todos os direitos reservados: Flávia Santana &copy 
+        </p>
+    </footer>
 </body>
+
 </html>
