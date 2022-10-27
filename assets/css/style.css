@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+  --rosa: ##ff0067;
+}
 
 /*Estilo da página index.html*/
 
@@ -19,6 +24,16 @@ body {
 .center{
     color: #fff;
   text-align: center;
+  margin-top: 2vw;
+  
+}
+
+.centergame{
+  color: #fff;
+  text-align: center;
+  margin-top: 2vw;
+  font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
 }
 
 .justify{
@@ -27,12 +42,12 @@ body {
 
 
 .container{
-    font-size: 20px;
+    font-size: 1rem;
     color: aliceblue;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 100px;
+    padding: 5vw;
 }
 
 .menu{
@@ -46,27 +61,32 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
   }
   
 nav p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color:#fff;
+    font-family: 'Press Start 2P', cursive;
  }
 
  nav p span {
-    color: #03e9f4;
+    color: #ff0067;
   }
 
 .centerwd{
     text-align: center;
     width: 500px;
     font-size: 18px;
+    color: #fff;
+    padding-top: 2vw;
 }
 
-.menu{
+/* .menu{
     text-align: end;
-}
+} */
 
 .menu li {
     display: inline;
@@ -78,7 +98,7 @@ nav p {
     position: relative;
     display: inline-block;
     padding: 1vw 1vw;
-    color: #03e9f4;
+    color: #ff0067;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -87,14 +107,22 @@ nav p {
 
 }
 
+.style-two{
+  width: 100%;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .menu li a:hover {
-    background: #03e9f4;
-    color: #fff;
+    background: #ff0067;
+    color: #03e9f4;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 5px #ff0067,
+                0 0 25px #ff0067,
+                0 0 50px #ff0067,
+                0 0 100px #ff0067;
   }
 
 .texto{
@@ -105,40 +133,45 @@ nav p {
     width: 320px;
     height: 300px;
     border-radius: 50%;
-}
+    padding: 5px;
+    border: 1px solid rgb(224, 173, 30);
+  }
 
 .icon{
     width: 30px;
     height: 30px;
-    padding: 20px;
+    margin: 0 20px;
     margin-top: 50px;
 }
 
 .flavia{
-    text-align: right;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
 }
 
 /*Página do contato*/
 main {
+ 
     width: 100vw;
     min-height: 80vh;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: flex-end;
 }
 
 h1,
 h2 {
   font-size: 3rem;
-  text-align: center;
+  text-align: justify;
   color: #fff;
   font-weight: 700;
 }
 
 .contato {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
     color: #fff;
   }
 
@@ -152,12 +185,13 @@ h2 {
   
   
   .login-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    width: 30vw;
+    padding: 2vw;
+    height: 71vh;
+    /* transform: translate(-50%, -50%); */
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -173,15 +207,19 @@ h2 {
   }
   
   .login-box .user-box input {
-    width: 100%;
+    width: 25vw;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
+  }
+
+  .contact-me{
+    padding-bottom: 2vw;
   }
 
   .login-box .user-box textarea {
@@ -194,6 +232,7 @@ h2 {
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
+    resize: none;
   }
 
   .login-box .user-box label {
@@ -207,11 +246,21 @@ h2 {
     transition: .5s;
   }
   
+  .footer{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer p{
+    align-items: center;
+  }
+
   .login-box .user-box input:focus ~ label,
   .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: #03e9f4;
+    color: #ff0067;
     font-size: 12px;
   }
 
@@ -219,7 +268,7 @@ h2 {
   .login-box .user-box textarea:valid ~ label {
     top: -20px;
     left: 0;
-    color: #03e9f4;
+    color: #ff0067;
     font-size: 12px;
   }
   
@@ -227,7 +276,7 @@ h2 {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #03e9f4;
+    color: #ff0067;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -238,13 +287,13 @@ h2 {
   }
   
   .login-box a:hover {
-    background: #03e9f4;
-    color: #fff;
+    background: #ff0067;
+    color: #03e9f4;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 5px #ff0067,
+                0 0 25px #ff0067,
+                0 0 50px #ff0067,
+                0 0 100px #ff0067;
   }
   
   .login-box a span {
@@ -275,7 +324,7 @@ h2 {
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
+    background: linear-gradient(180deg, transparent, #ff0067);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
   }
@@ -313,7 +362,7 @@ h2 {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
+    background: linear-gradient(360deg, transparent, #ff0067);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
   }
@@ -337,5 +386,5 @@ h2 {
   .endereco {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
   }

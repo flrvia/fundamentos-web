@@ -25,24 +25,27 @@
     </nav>
 
 
-    <h1 class="center">Entre em contato comigo</h1>
+    <h1 class="contact-me">Entre em contato comigo</h1>
     <main class="contato">
 
         <section class="login-box">
             <form>
                 <div class="user-box">
-                    <input type="text" name="" required="">
+                    <input id="nome" type="text" name="" required="" onkeyup='validaNome()'>
                     <label>Nome</label>
                 </div>
+                <div id="txtNome"></div>
                 <div class="user-box">
-                    <input type="email" name="" required="">
+                    <input id="email" type="email" name="" required="" onkeyup='validaEmail()'>
                     <label>E-mail</label>
                 </div>
+                <div id="txtEmail"></div>
                 <div class="user-box">
-                    <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup='validaAssunto()'></textarea>
                     <label>Assunto:</label>
                 </div>
-                <a href="#">
+                <div id="txtAssunto"></div>
+                <a href="#" onclick='enviarForm()'>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -60,13 +63,15 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098169135342!2d-46.65412628521496!3d-23.56491746760833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1666657697669!5m2!1spt-BR!2sbr"
                 class='mapa' width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade"
+                onmouseover="zoomMapa()"
+                onmouseout="mapaSemZoom()"></iframe>
 
         </section>
     </main>
-    <hr>
+    <hr class="style-two">
     <footer>
-        <div class="container">
+        <div class="footer">
             <a href="https://www.linkedin.com/in/flaviasantanab/" target="_blank">
                 <img class="icon" src="assets/img/linkedin.png" alt="icone do linkedin">
             </a>
@@ -88,7 +93,11 @@
         <p class="center">
             Todos os direitos reservados: Flávia Santana &copy
         </p>
+        <p onclick="topo()">Voltar ao topo da página</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
